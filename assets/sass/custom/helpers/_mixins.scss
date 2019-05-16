@@ -146,20 +146,12 @@ $desktop-width-extra-lg: 2500px;
 		
 		
 		// ----------------------------------
-		// Brandon Grotesque Font Family
+		// Font Family
 		// ----------------------------------
+
 		@mixin ff-primary() {
-			font-family: 'tondo-corp', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-		}
-
-		@mixin ff-secondary() {
 			font-family: 'lato', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-		}
-
-		@mixin ff-tertiary() {
-			font-family: 'helvetica', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-		}
-			
+		}			
 		
 		// ----------------------------------
 		// Truncate Text (ellipsis) Mixin
