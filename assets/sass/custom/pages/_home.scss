@@ -225,3 +225,145 @@
   }
   
 }
+
+// filter navabr
+.filter-navbar {
+
+  // left sec
+  .left {
+
+    // result text
+    .result-text {}
+
+    // gray txt
+    .gray-text {}
+
+    // info-sec
+    .info-sec {
+
+      // icon
+      i {}
+
+      // text
+      .info-text {}
+    }
+
+  }
+
+  // right sec
+  .right {
+
+    // form-group
+    .form-group {}
+
+    // heading
+    .filter-heading {}
+
+    // select
+    .filter-select {}
+
+    // list
+    .list-view {
+
+      // icon
+      i {}
+
+      // vertical
+      &.vertical {}
+
+      // horizontal
+      &.horizontal {}
+    }
+  }
+}
+
+// card-result-foud
+.card-result-found {
+
+  // header
+  .card-header {
+
+    // img
+    .img-logo {}
+  }
+
+  // body
+  .card-body {
+
+    // heading
+    .heading {}
+
+    // list
+    .charges-list {}
+
+    // list-item
+    .charges-list-item {
+
+      // icon
+      i {}
+
+      // text
+      .text {}
+
+      // name
+      .name {}
+
+      // amount
+      .amount {}
+    }
+
+    // list
+    .footer-info-list {}
+
+    // list-item
+    .footer-info-list-item {}
+
+    // gray-text
+    .gray-text {}
+
+    // black-text
+    .black-text {}
+  }
+
+  // footer
+  .card-footer {
+
+    // share icon
+    .icon-share {}
+
+    // price sec
+    .price-sec {
+
+      // price
+      .price {
+
+        // with cut
+        &.with-cut {}
+      }
+
+      // number
+      .num {}
+    }
+
+    // blue-text
+    .blue-text {}
+
+    // action-footer
+    .action-footer {}
+
+    // text
+    .expiry-text {}
+
+    // danger-text
+    .danger-text {}
+
+    // button
+    .btn-book {
+    }
+
+    // icon arrow
+    .icon-arrow {
+        
+    }
+  }
+}
