@@ -60,7 +60,8 @@
 
 // blink badge
 .badge-blink {
-  left: 50%;
+  position: absolute;
+  left: 54%;
   background: $white;
   width: 160px;
   font-size: 14px;
@@ -74,6 +75,7 @@
   // On mobile
   @include mobile {
     left: 30%;
+    top: -1%;
   }
 
     // badge
