@@ -70,6 +70,7 @@
     </div>
   </nav>
 
+  <div class="bg-bluestrip"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-xs-12">
@@ -77,27 +78,33 @@
         <!-- <h1 class="badge-seller"> Best Seller</h1>
            -->
         <div class="card card-search w-100">
-          <div class="card-body d-flex">
-            <div class="left-card-body d-flex">
+          <div class="card-body p--0-imp">
+            <div class="left-card-body">
               <div class="card-info">
-                <p class="card-gray-text">Origin Port</p>
-                <h5 class="card-title text-uppercase">Innsa</h5>
-                <p class="card-text">Jawaharlal Nehru, IN</p>
+                <div class="card-text-group pl--0-imp">
+                  <p class="card-gray-text">Origin Port</p>
+                  <h5 class="card-title text-uppercase">Innsa</h5>
+                  <p class="card-text">Jawaharlal Nehru, IN</p>
+                </div>
               </div>
 
               <div class="card-info">
-                <p class="card-gray-text">Destination Port</p>
-                <h5 class="card-title text-uppercase">Deham</h5>
-                <p class="card-text">Port of Hamburg, GY</p>
+                <div class="card-text-group">
+                  <p class="card-gray-text">Destination Port</p>
+                  <h5 class="card-title text-uppercase">Deham</h5>
+                  <p class="card-text">Port of Hamburg, GY</p>
+                </div>
               </div>
 
               <div class="card-info">
-                <p class="card-gray-text">Sailing Date</p>
-                <h5 class="card-title">12Jan</h5>
-                <p class="card-text">2019</p>
+                <div class="card-text-group">
+                  <p class="card-gray-text">Sailing Date</p>
+                  <h5 class="card-title">12Jan</h5>
+                  <p class="card-text">2019</p>
+                </div>
               </div>
 
-              <div class="card-info">
+              <div class="card-info pl-mob">
                 <p class="card-gray-text">Select Container Type</p>
                 <div class="select-box d-flex">
                   <div class="container1">
@@ -130,15 +137,24 @@
               </div>
             </div>
             <div class="right-card-body">
-              <button type="button" class="btn btn-primary">Modify search</button>
-              <div>
-                <a href="javascript:void(0);" class="services"><i class="ion-ios-add"></i>Additional Services</a>
-              </div>
+              <button type="button" class="btn btn-primary btn-modify">Modify search</button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="footer-text add_fav-sec">
+              <i class="ion-ios-heart-empty"></i>
+              <span class="gray-text"> Add to favourites</span>
+            </div>
+            <div class="services-sec">
+              <a href="javascript:void(0);" class="footer-text services">
+                <i class="ion-ios-add"></i>
+                <span class="gray-text">Additional Services</span>
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="badge">
+        <div class="badge badge-blink">
           Match rates
           <span class="circle red"></span>
         </div>

@@ -2,29 +2,92 @@
 // ## HOME.SCSS ## //
 // ######################################## //
 
+// container
+.container {
+  padding: 0;
+
+  // On mobile
+  @include mobile {
+    padding: 20px;
+  }
+}
+
+// blue strip
+.bg-bluestrip {
+  position: relative;
+
+   // before
+   &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba($theme-primary, 0.1);
+  }
+
+}
+
 // card search
 .card-search {
+  position: relative;
   border: none;
   background: $white;
   padding: 43px 37px;
+
+  // On mobile
+  @include mobile {
+    padding: 15px 30px;
+   }
 
   // body
   .card-body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    // On mobile
+    @include mobile {
+     flex-direction: column;
+    }
   }
 
-  // card info
-  .left-card-body .card-info {
+  // left-card-body
+  .left-card-body {
+    display: flex;
+
+    // On mobile
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    } 
+  }
+
+  // card-info
+  .card-info.pl-mob {
+    padding-left: 30px;
+
+    // On mobile
+    @include mobile {
+      padding-left: 0;
+      padding-top: 20px;
+    } 
+  }
+
+  // card text group
+  .card-text-group {
     font-weight: 700;
     border-right: 1px solid rgba($theme-gray, 0.16);
     padding: 0 30px;
 
-    // last child
-    &:last-child {
+    // On mobile
+    @include mobile {
+      border-bottom: 1px solid rgba($theme-gray, 0.16);
       border-right: none;
-    }
+      padding: 20px 0;
+    } 
   }
 
   // gray text
@@ -52,6 +115,11 @@
   .select-box {
     margin-top: 18px;
 
+    // On mobile
+    @include mobile {
+      justify-content: center;
+    }
+
     // form control
     .form-control {
       border: 2px solid $theme-primary;
@@ -64,6 +132,15 @@
       margin-right: 20px;
     }
     
+  }
+  
+  // button
+  .btn-modify {
+
+    // On mobile
+    @include mobile {
+      margin: 40px 0;
+    }
   }
 
   // badge-sec
@@ -91,4 +168,43 @@
       }
     }
   }
+
+  // card-footer
+  .card-footer {
+    padding: 0;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // fav sec
+    .footer-text {
+      display: flex;
+      align-items: center;
+    }
+
+    // icon
+    i {
+      color: $theme-text-light;
+      font-size: 20px;
+      margin-right: 3px;
+      font-weight: 700;
+    }
+
+    // text
+    .gray-text {
+      color: $theme-text-dark;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    // services sec
+    .services-sec {
+      padding: 0 2px 0 5px;
+      border-bottom: 1px dashed $theme-text-dark;
+    }
+  }
+  
 }

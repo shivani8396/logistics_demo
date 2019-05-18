@@ -7009,6 +7009,18 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 900;
   src: local("Lato Black"), local("Lato-Black"), url("../fonts//Lato/Lato-Black.ttf") format("woff2"); }
 
+.btn-primary {
+  background: #3549af;
+  color: #ffffff;
+  padding: 8px 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  border: none; }
+
+.badge {
+  position: relative; }
+
 .badge-primary {
   background: #3549af;
   color: #ffffff; }
@@ -7050,6 +7062,48 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 5px 12px;
   margin-right: 5px; }
 
+.badge-blink {
+  left: 50%;
+  background: #ffffff;
+  width: 160px;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #acacac;
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 27px;
+  border-radius: 4px; }
+  @media (max-width: 767px) {
+    .badge-blink {
+      left: 30%; } }
+  .badge-blink .badge {
+    position: relative; }
+  .badge-blink .circle {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    opacity: .25; }
+  .badge-blink .red {
+    background-color: #f2799a;
+    position: absolute;
+    top: 10px;
+    right: 27px;
+    -webkit-animation: up-right 2s infinite;
+    -moz-animation: up-right 2s infinite;
+    -o-animation: up-right 2s infinite;
+    animation: up-right 2s infinite; }
+    .badge-blink .red:before {
+      content: '';
+      border-radius: 50%;
+      position: absolute;
+      border: 1px dotted #f2799a;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      background: transparent;
+      z-index: -1; }
+
 @-webkit-keyframes up-right {
   0% {
     -webkit-transform: scale(1);
@@ -7077,36 +7131,6 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: .25; } }
-
-.badge {
-  position: relative; }
-
-.circle {
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  opacity: .25; }
-
-.red {
-  background-color: #f2799a;
-  position: absolute;
-  top: -3px;
-  right: -20px;
-  -webkit-animation: up-right 1s infinite;
-  -moz-animation: up-right 1s infinite;
-  -o-animation: up-right 1s infinite;
-  animation: up-right 1s infinite; }
-  .red:before {
-    content: '';
-    border-radius: 50%;
-    position: absolute;
-    border: 1px dotted #f2799a;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background: transparent;
-    z-index: -1; }
 
 .m--0 {
   margin: 0px; }
@@ -10883,7 +10907,6 @@ html {
     width: 60px; }
     @media (max-width: 767px) {
       .navbar-right .select-flag {
-        width: auto;
         padding: 0; } }
     .navbar-right .select-flag:focus {
       outline: none;
@@ -10907,10 +10930,31 @@ html {
     color: #000000;
     padding-left: 10px; }
 
+.container {
+  padding: 0; }
+  @media (max-width: 767px) {
+    .container {
+      padding: 20px; } }
+
+.bg-bluestrip {
+  position: relative; }
+  .bg-bluestrip:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(53, 73, 175, 0.1); }
+
 .card-search {
+  position: relative;
   border: none;
   background: #ffffff;
   padding: 43px 37px; }
+  @media (max-width: 767px) {
+    .card-search {
+      padding: 15px 30px; } }
   .card-search .card-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10921,12 +10965,39 @@ html {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-  .card-search .left-card-body .card-info {
+    @media (max-width: 767px) {
+      .card-search .card-body {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+  .card-search .left-card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 767px) {
+      .card-search .left-card-body {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        text-align: center; } }
+  .card-search .card-info.pl-mob {
+    padding-left: 30px; }
+    @media (max-width: 767px) {
+      .card-search .card-info.pl-mob {
+        padding-left: 0;
+        padding-top: 20px; } }
+  .card-search .card-text-group {
     font-weight: 700;
     border-right: 1px solid rgba(112, 112, 112, 0.16);
     padding: 0 30px; }
-    .card-search .left-card-body .card-info:last-child {
-      border-right: none; }
+    @media (max-width: 767px) {
+      .card-search .card-text-group {
+        border-bottom: 1px solid rgba(112, 112, 112, 0.16);
+        border-right: none;
+        padding: 20px 0; } }
   .card-search .card-gray-text {
     font-size: 14px;
     color: #afafaf;
@@ -10941,12 +11012,20 @@ html {
     color: #000000; }
   .card-search .select-box {
     margin-top: 18px; }
+    @media (max-width: 767px) {
+      .card-search .select-box {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
     .card-search .select-box .form-control {
       border: 2px solid #3549af;
       width: 80px;
       color: #3549af; }
     .card-search .select-box .container1 {
       margin-right: 20px; }
+  @media (max-width: 767px) {
+    .card-search .btn-modify {
+      margin: 40px 0; } }
   .card-search .badge-sec {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10975,6 +11054,39 @@ html {
       align-items: center; }
       .card-search .badge-sec .icon i {
         font-size: 20px; }
+  .card-search .card-footer {
+    padding: 0;
+    background: none;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .card-search .card-footer .footer-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .card-search .card-footer i {
+      color: #afafaf;
+      font-size: 20px;
+      margin-right: 3px;
+      font-weight: 700; }
+    .card-search .card-footer .gray-text {
+      color: #8e8e8e;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .card-search .card-footer .services-sec {
+      padding: 0 2px 0 5px;
+      border-bottom: 1px dashed #8e8e8e; }
 
 /*!
  * animate.css -http://daneden.me/animate

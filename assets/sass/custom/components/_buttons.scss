@@ -1,3 +1,14 @@
 // ######################################## //
 // ## BUTTONS.SCSS ## //
 // ######################################## //
+
+// btn primry
+.btn-primary {
+  background: $theme-primary;
+  color: $white;
+  padding: 8px 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+}
