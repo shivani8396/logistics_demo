@@ -232,11 +232,21 @@
   align-items: center;
   justify-content: space-between;
 
+  // On mobile
+  @include mobile {
+    flex-direction: column;
+  }
+
   // left sec
   .left {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    // On mobile
+    @include mobile {
+      margin-bottom: 20px;
+    }
 
     // result text
     .result-text {
@@ -283,9 +293,36 @@
     align-items: center;
     justify-content: space-between;
 
+    // On mobile
+    @include mobile {
+      flex-direction: column;
+    }
+
+    // left sec
+    .left-sec {
+      display: flex;
+      align-items: center;
+    }
+
+    // right sec
+    .right-sec {
+      display: flex;
+      align-items: center;
+
+      // On mobile
+      @include mobile {
+        width: 100%;
+      } 
+    }
+
     // form-group
     .form-group {
       margin-right: 20px;
+
+      // On mobile
+      @include mobile {
+        margin-right: 0;
+      }      
     }
 
     // heading
@@ -298,6 +335,16 @@
       // dark-text
       &.dark-text {
         color: $theme-text-dark;
+      }
+
+      // pl
+      &.pl--mob {
+        padding-left: 8px;
+
+        // On mobile
+        @include mobile {
+         padding-left: 17px;
+        } 
       }
     }
 
@@ -315,6 +362,11 @@
       text-transform: uppercase;
       color: $theme-gray;
       margin-right: 15px;
+
+      // On mobile
+      @include mobile {
+        font-size: 13px;
+      }
     }
 
     // select
@@ -362,6 +414,11 @@
       // vertical
       &.vertical {
         transform: rotate(90deg);
+
+        // On mobile
+        @include mobile {
+          margin-left: 20px;
+        }
       }
 
       // horizontal
@@ -372,6 +429,17 @@
 
 // card-result-foud
 .card-result-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: none;
+  box-shadow: 0 4px 9px 0 rgba($black, 0.2);
+
+  // On mobile
+  @include mobile {
+    flex-direction: column;
+  }
 
   // header
   .card-header {
@@ -383,9 +451,14 @@
       background-color: white;
       background-position: center;
       background-size: contain;
-      width: 390px;
+      width: 170px;
       height: 90px;
       background-repeat: no-repeat;
+
+      // On mobile
+      @include mobile {
+        width: 200px;
+      }
     }
   }
 
@@ -429,6 +502,11 @@
 
   // footer
   .card-footer {
+
+    // On mobile
+    @include mobile {
+      width: 100%;
+    }    
 
     // share icon
     .icon-share {}
