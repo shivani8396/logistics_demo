@@ -7,11 +7,10 @@
     <meta charset="UTF-8" />
     <meta name="theme-color" content="javascript:void(0);3549af" />
     <meta name="title" content="XYZForwarder" />
-    <!-- <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png"> -->
-    
+       
     <!-- CSS includes -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <!-- Js Includes -->
     <script src="assets/js/jquery.min.js"></script>      
@@ -41,7 +40,7 @@
         <div class="form-inline navbar-search-group d-flex">
           <input class="form-control navbar-search" type="search" placeholder="Enter BookingID, Reference ID, Order No" aria-label="Search">
           <div class="input-group-append">
-            <button type="submit" class="navabr-search-icon"><i class="fa fa-search"></i></button>
+            <button type="submit" class="navabr-search-icon"><i class="ion-ios-search"></i></button>
           </div>
           
         </div>
@@ -49,11 +48,11 @@
       
       <ul class="navbar-nav ml-auto navbar-right">
         <select data-show-content="true" class="form-control select-flag">
-          <option data-content="<i class='fa fa-flag'></i>" selected>INR</option>
-          <option data-content="<i class='fa fa-flag'></i>">US</option>
-          <option data-content="<i class='fa fa-flag'></i> Heart">ARGENTINA</option>
+          <option style="background-image:url('assets/images/india-flag.svg');" selected>INR</option>
+          <option style="background-image:url('assets/images/india-flag.svg');">US</option>
+          <option style="background-image:url('assets/images/india-flag.svg');">Heart">ARGENTINA</option>
         </select>
-        <a href="javascript:void(0);" class="notification-icon"><i class="fa fa-bell-o"></i></a> 
+        <a href="javascript:void(0);" class="notification-icon"><i class="ion-ios-notifications-outline"></i></a> 
         <div class="profile-sec d-flex">
           <a href="javascript:void(0);" class="user-pic"><div class="user" style="background-image: url('assets/images/user.svg');" alt="Logo"></div></a>
           <li class="nav-item dropdown">
@@ -75,20 +74,20 @@
     <div class="row">
       <div class="col-md-12 col-xs-12">
 
-        <h1 class="bltri"> Best Seller</h1>
-          
-        <div class="card bg-light mb-3 w-100">
+        <!-- <h1 class="badge-seller"> Best Seller</h1>
+           -->
+        <div class="card card-search w-100">
           <div class="card-body d-flex">
             <div class="left-card-body d-flex">
               <div class="card-info">
                 <p class="card-gray-text">Origin Port</p>
-                <h5 class="card-title">Innsa</h5>
+                <h5 class="card-title text-uppercase">Innsa</h5>
                 <p class="card-text">Jawaharlal Nehru, IN</p>
               </div>
 
               <div class="card-info">
                 <p class="card-gray-text">Destination Port</p>
-                <h5 class="card-title">Deham</h5>
+                <h5 class="card-title text-uppercase">Deham</h5>
                 <p class="card-text">Port of Hamburg, GY</p>
               </div>
 
@@ -100,7 +99,7 @@
 
               <div class="card-info">
                 <p class="card-gray-text">Select Container Type</p>
-                <div class="select d-flex">
+                <div class="select-box d-flex">
                   <div class="container1">
                     <select class="form-control" id="select1">
                       <option>1</option>
@@ -109,9 +108,9 @@
                       <option>4</option>
                       <option>5</option>
                     </select>
-                    <div>
-                      <span class="badge badge-primary">20GP</span>
-                      <a href="javascript:void(0);"><i class="fa fa-close"></i></a>
+                    <div class="badge-sec">
+                      <div class="badge badge-primary badge-text">20GP</div>
+                      <div class="icon"><i class="ion-ios-close"></i></div>
                     </div>
                   </div>
                   <div class="container2">
@@ -122,9 +121,9 @@
                       <option>4</option>
                       <option>5</option>
                     </select>
-                    <div>
-                      <span class="badge badge-primary">40GP</span>
-                      <a href="javascript:void(0);"><i class="fa fa-close"></i></a>
+                    <div class="badge-sec">
+                      <div class="badge badge-primary badge-text">40GP</div>
+                      <div class="icon"><i class="ion-ios-close"></i></div>
                     </div>
                   </div>
                 </div>
@@ -133,7 +132,7 @@
             <div class="right-card-body">
               <button type="button" class="btn btn-primary">Modify search</button>
               <div>
-                <a href="javascript:void(0);" class="services"><i class="fa fa-plus"></i>Additional Services</a>
+                <a href="javascript:void(0);" class="services"><i class="ion-ios-add"></i>Additional Services</a>
               </div>
             </div>
           </div>

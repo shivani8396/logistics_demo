@@ -1,3 +1,94 @@
 // ######################################## //
 // ## HOME.SCSS ## //
 // ######################################## //
+
+// card search
+.card-search {
+  border: none;
+  background: $white;
+  padding: 43px 37px;
+
+  // body
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // card info
+  .left-card-body .card-info {
+    font-weight: 700;
+    border-right: 1px solid rgba($theme-gray, 0.16);
+    padding: 0 30px;
+
+    // last child
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  // gray text
+  .card-gray-text {
+    font-size: 14px;
+    color: $theme-text-light;
+    margin-bottom: 2px; 
+  }
+
+  // title
+  .card-title {
+    font-size: 30px;
+    color: $black;
+    font-weight: 700;
+    margin-bottom: 2px; 
+  }
+
+  // text
+  .card-text {
+    font-size: 12px;
+    color: $black;
+  }
+
+  // select box
+  .select-box {
+    margin-top: 18px;
+
+    // form control
+    .form-control {
+      border: 2px solid $theme-primary;
+      width: 80px;
+      color: $theme-primary;
+    }
+
+    // container1
+    .container1 {
+      margin-right: 20px;
+    }
+    
+  }
+
+  // badge-sec
+  .badge-sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+
+    // icon sec
+    .icon {
+      color: $theme-danger;
+      border: 1px solid $theme-danger;
+      padding: 5px;
+      border-radius: 2px;
+      height: 15px;
+      width: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // icon
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+}
