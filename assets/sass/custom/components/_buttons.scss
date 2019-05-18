@@ -11,4 +11,9 @@
   font-size: 12px;
   font-weight: 600;
   border: none;
+
+  // hover, focus
+  &:hover, &:focus {
+    background: rgba($theme-primary, 0.9);
+  }
 }

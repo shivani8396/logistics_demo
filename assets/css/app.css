@@ -7017,6 +7017,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 12px;
   font-weight: 600;
   border: none; }
+  .btn-primary:hover, .btn-primary:focus {
+    background: rgba(53, 73, 175, 0.9); }
 
 .badge {
   position: relative; }
@@ -10856,7 +10858,7 @@ html {
     border-radius: 8px;
     border: 1px solid rgba(221, 221, 221, 0.8);
     width: 100px; }
-    .searchbar-sec .form-control.navbar-search-select:focus {
+    .searchbar-sec .form-control.navbar-search-select:focus, .searchbar-sec .form-control.navbar-search-select:hover {
       outline: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
@@ -10874,11 +10876,28 @@ html {
     flex: 1;
     border-radius: 0;
     border-width: 1px 1px 1px 0; }
+    .searchbar-sec .form-control.navbar-search:focus, .searchbar-sec .form-control.navbar-search:hover {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: #3549af; }
+  .searchbar-sec .input-group-append {
+    margin-left: 0px; }
   .searchbar-sec .navabr-search-icon {
     height: 38px;
     background: transparent;
     padding: 0 12px;
-    color: #777777; }
+    color: #777777;
+    border-left: 0; }
+    .searchbar-sec .navabr-search-icon:focus, .searchbar-sec .navabr-search-icon:hover {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: none;
+      background: rgba(53, 73, 175, 0.15);
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
 
 .navbar-right {
   -webkit-box-align: center;
@@ -11028,6 +11047,9 @@ html {
       width: 70px;
       color: #3549af;
       height: 35px !important; }
+      .card-search .select-box .form-control:focus, .card-search .select-box .form-control:hover {
+        -webkit-box-shadow: none;
+        box-shadow: none; }
     .card-search .select-box .container1 {
       margin-right: 20px; }
   @media (max-width: 767px) {
@@ -11081,6 +11103,8 @@ html {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
+      .card-search .card-footer .footer-text:focus, .card-search .card-footer .footer-text:hover {
+        text-decoration: none; }
     .card-search .card-footer i {
       color: #afafaf;
       font-size: 20px;

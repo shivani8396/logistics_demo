@@ -132,6 +132,11 @@
       width: 70px;
       color: $theme-primary;
       height: 35px !important;
+
+      // on hover, focus
+      &:focus, &:hover {
+        box-shadow: none;
+      }
     }
 
     // container1
@@ -189,6 +194,11 @@
     .footer-text {
       display: flex;
       align-items: center;
+
+      // On focus, hover
+      &:focus, &:hover {
+        text-decoration: none;
+      }
     }
 
     // icon
